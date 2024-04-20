@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slideshow</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+    #slideshow-container {
+        position: relative;
+        margin: auto;
+        max-width: 800px;
+        overflow: hidden;
+    }
+    .slide {
+        display: none;
+        width: 100%;
+    }
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+    .controls {
+        margin-top: 10px;
+        position: relative;
+      
+    }
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+        cursor: grab;
+       
+    }
+    button:hover {
+        background-color: #1d8bd4;
+    }
+</style>
+</head>
+<body>
+
+<div id="slideshow-container">
+    <div class="slide">
+        <img src="https://imgs.search.brave.com/LBbjodVYUlX0RPjV2wOWqNxV7t3f4JUdWCxxnOIaZfw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NDY1ODczNDgtZDEy/NjYwYzMwYzUwP3E9/ODAmdz0xMDAwJmF1/dG89Zm9ybWF0JmZp/dD1jcm9wJml4bGli/PXJiLTQuMC4zJml4/aWQ9TTN3eE1qQTNm/REI4TUh4elpXRnlZ/Mmg4Tm54OGJtRjBk/WEpoYkh4bGJud3dm/SHd3Zkh4OE1BPT0.jpeg" alt="Slide 1">
+    </div>
+    <div class="slide">
+        <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg" alt="Slide 2">
+    </div>
+    <!-- Add more slides here -->
+    <div class="slide">
+        <img src="https://media.istockphoto.com/id/506472311/photo/sunrise.jpg?s=612x612&w=0&k=20&c=SuDedU0KOEe19hk-zFAV7CuUmOLrudxqjwjLtzY53Ec=" alt="Slide 3">
+    </div>
+    <div class="slide">
+        <img src="https://images.unsplash.com/photo-1546587348-d12660c30c50?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJhbHxlbnwwfHwwfHx8MA==" alt="Slide 4">
+    </div>
+    <div class="slide">
+        <img src="https://images.freeimages.com/images/large-previews/f69/nature-1-1394057.jpg?fmt" alt="Slide 5">
+    </div>
+    <div class="slide">
+        <img src="https://images.freeimages.com/images/large-previews/dc8/nature-4-1552587.jpg?fmt" alt="Slide 6">
+    </div>
+    <div class="slide">
+        <img src="https://media.gettyimages.com/id/1454962497/photo/aerial-view-on-spring-fields.jpg?s=612x612&w=0&k=20&c=1haqRjQKYDfF10HykOsEhrJZDUeXKGEhoHwr7Fr0-n8=" alt="Slide 7">
+    </div>
+    <div class="slide">
+        <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/natural-scenery-with-pathway-and-mountain-view-free-photo.jpeg?w=600&quality=80" alt="Slide 8">
+    </div>
+    <div class="slide">
+        <img src="https://media.gettyimages.com/id/1299754707/photo/detail-of-hand-touching-water-surface-of-lake-at-sunset.jpg?s=612x612&w=0&k=20&c=B54icLAeISWnP9bxML32wX8UTCfPrGBNHISwCywCCGE=" alt="Slide 9">
+    </div>
+    <div class="slide">
+        <img src="https://images.freeimages.com/images/large-previews/7f3/nature-2-1534182.jpg?fmt" alt="Slide 10">
+    </div>
+    <div class="slide">
+        <img src="https://media.gettyimages.com/id/1420922964/photo/gebirgslandschaft.jpg?s=612x612&w=0&k=20&c=bN6FDCHTdfYZ0OLEnAbqWONwIScuue0rqOCgdq5XRD8=" alt="Slide 11">
+    </div>
+    <div class="slide">
+        <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/painted-natural-scenery-with-high-mountains-free-photo.jpeg?w=600&quality=80" alt="Slide 12">
+    </div>
+    <div class="slide">
+        <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/nature-lover-green-heart-tree-free-photo.jpg?w=600&quality=80" alt="Slide 13">
+    </div>
+    <div class="slide">
+        <img src="https://img.freepik.com/free-photo/natural-landscape-sunset_23-2147628892.jpg?size=626&ext=jpg" alt="Slide 14">
+    </div>
+    <div class="slide">
+        <img src="https://media.gettyimages.com/id/1201252148/photo/butterflies.jpg?s=612x612&w=0&k=20&c=p8gc2ZTDkJCRsI9r2yHGD2Py4LSv7vznpJs0N-H3qRI=" alt="Slide 15">
+    </div>
+    <div class="slide">
+        <img src="https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_640.jpg" alt="Slide 16">
+    </div>
+    <div class="slide">
+        <img src="https://media.gettyimages.com/id/691930476/photo/tuscany-landscape-at-sunrise-with-low-fog.jpg?s=612x612&w=0&k=20&c=4YAvqVb3OIOsyE2ij1Gm8slJuE3G78ZEL9tIRRIrJgc=" alt="Slide 17">
+    </div>
+    <div class="slide">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/81f15095-53e5-407d-b083-7e8bb71340d0/dghg9a7-e28a3609-89d3-4c7a-b4d7-0eb36438cdcf.jpg/v1/fill/w_365,h_250,q_70,strp/nature_006_by_spiderhal2_dghg9a7-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODMyIiwicGF0aCI6IlwvZlwvODFmMTUwOTUtNTNlNS00MDdkLWIwODMtN2U4YmI3MTM0MGQwXC9kZ2hnOWE3LWUyOGEzNjA5LTg5ZDMtNGM3YS1iNGQ3LTBlYjM2NDM4Y2RjZi5qcGciLCJ3aWR0aCI6Ijw9MTIxNiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.6qXGwq4goFwmm7H4_iIIQXynZnRBVBdOAhzG3TxGXzU" alt="Slide 18">
+    </div>
+    <div class="slide">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/81f15095-53e5-407d-b083-7e8bb71340d0/dghg99x-c355d5ef-8812-4d4c-9681-9660c824ddd1.jpg/v1/fit/w_375,h_257,q_70,strp/nature_004_by_spiderhal2_dghg99x-375w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODMyIiwicGF0aCI6IlwvZlwvODFmMTUwOTUtNTNlNS00MDdkLWIwODMtN2U4YmI3MTM0MGQwXC9kZ2hnOTl4LWMzNTVkNWVmLTg4MTItNGQ0Yy05NjgxLTk2NjBjODI0ZGRkMS5qcGciLCJ3aWR0aCI6Ijw9MTIxNiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.s4pY4azYvI5NkKjie6NCGSfGpEooSVl2Wh4UCL1Uf3E" alt="Slide 19">
+    </div>
+    <div class="slide">
+        <img src="https://media.istockphoto.com/id/1454695563/photo/a-beautiful-idyllic-image-of-the-nature-of-the-countryside-on-a-summer-evening.webp?b=1&s=170667a&w=0&k=20&c=28zKOzLjNIKj8VU067zK247udnJXpYA4LFYhfk8s_l8=" alt="Slide 20">
+    </div>
+
+
+    
+</div>
+
+<div class="controls">
+    <button onclick="prevSlide()">Previous</button>
+    <button onclick="nextSlide()">Next</button>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    function showSlide(n) {
+        const slides = document.querySelectorAll('.slide');
+        if (n >= slides.length) {
+            currentSlide = 0;
+        }
+        if (n < 0) {
+            currentSlide = slides.length - 1;
+        }
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        });
+        slides[currentSlide].style.display = 'block';
+    }
+
+    function nextSlide() {
+        showSlide(++currentSlide);
+    }
+
+    function prevSlide() {
+        showSlide(--currentSlide);
+    }
+
+    showSlide(currentSlide); // Show initial slide
+
+</script>
+
+</body>
+</html>
